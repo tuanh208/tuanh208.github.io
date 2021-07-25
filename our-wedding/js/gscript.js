@@ -19,12 +19,4 @@ if (window.location.hash == "#anh-quang-x13") {
     document.getElementById("guest_invitation_vi").innerHTML = invitation_start_vi + " anh Quang và chị Cúc " + invitation_end_vi;
     document.getElementById("guest_invitation_fr").innerHTML = invitation_start_fr + " Quang et Cúc " + invitation_end_fr;
 }
-else if (window.location.hash == "#vi") {
-    language_dict = language_vi
-    document.body.className='vi'
-}
-else if (window.location.hash == "#fr") {
-    language_dict = language_fr
-    document.body.className='fr'
-}
 }
