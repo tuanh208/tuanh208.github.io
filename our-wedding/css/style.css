@@ -125,7 +125,7 @@ a:focus {
   margin-right: auto;
   left: 0;
   right: 0;
-  /* width: 550px; */
+  width: 600px;
 }
 
 body.en :lang(vi) {
