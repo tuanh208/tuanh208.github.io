@@ -120,9 +120,13 @@ a:focus {
 }
 
 .fb-comments{
-  display:block!important;
-  margin:0 auto;
-  }  
+  position: absolute !important;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  /* width: 550px; */
+}
 
 body.en :lang(vi) {
   display: none!important;
