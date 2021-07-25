@@ -120,7 +120,7 @@ a:focus {
 }
 
 .fb-comments{
-  display:block;
+  display:block!important;
   margin:0 auto;
   }  
 
