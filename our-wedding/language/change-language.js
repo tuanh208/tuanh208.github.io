@@ -74,26 +74,29 @@ function changeMessageLanguage(lang_dict) {
 // Define the language reload anchors and set default language
 // var language_dict = language_vi;
 // document.body.className='vi'
-changeLanguage('vi', init=true)
+changeLanguage('en', init=true)
 
-// // Check if a hash value exists in the URL
-// if (window.location.hash) {
+// Check if a hash value exists in the URL
+if (window.location.hash) {
 
-// // Set the content of the webpage 
-// // depending on the hash value
-// if (window.location.hash == "#en") {
-//     language_dict = language_en
-//     document.body.className='en'
-//     window.alert(language_dict.description_groom)
-// }
-// else if (window.location.hash == "#vi") {
-//     language_dict = language_vi
-//     document.body.className='vi'
-//     window.alert(language_dict.description_groom)
-// }
-// else if (window.location.hash == "#fr") {
-//     language_dict = language_fr
-//     document.body.className='fr'
-//     window.alert(language_dict.description_groom)
-// }
-// }
+// Set the content of the webpage 
+// depending on the hash value
+if (window.location.hash == "#en") {
+    changeLanguage('en')
+    // language_dict = language_en
+    // document.body.className='en'
+    // window.alert(language_dict.description_groom)
+}
+else if (window.location.hash == "#vi") {
+    changeLanguage('vi')
+    // language_dict = language_vi
+    // document.body.className='vi'
+    // window.alert(language_dict.description_groom)
+}
+else if (window.location.hash == "#fr") {
+    changeLanguage('fr')
+    // language_dict = language_fr
+    // document.body.className='fr'
+    // window.alert(language_dict.description_groom)
+}
+}
