@@ -216,6 +216,9 @@ body.fr :lang(vi) {
 }
 
 /*** validate rsvp form ***/
+label {
+  display: inline-block;
+}
 .validate-rsvp-form .success-error-message {
   margin: 15px 0 0;
 }

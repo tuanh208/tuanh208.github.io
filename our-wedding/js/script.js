@@ -544,6 +544,10 @@
 
                 events: {
                     required: true
+                },
+
+                sendemail: {
+                    required: true
                 }
 
             },
@@ -559,13 +563,14 @@
                 },
                 guest: language_dict['guest_rsvp_error'],
                 events: language_dict['events_rsvp_error'],
+                sendemail: language_dict['sendemail_rsvp_error'],
             },
 
             submitHandler: function (form) {
                 $("#loader").css("display", "inline-block");
                 $.ajax({
                     type: "POST",
-                    url: "https://script.google.com/macros/s/AKfycbxFjB1D5Q7KXdmP6tMuJ1ZiBuztIZHIU464lAt8MDbb84_kREg2ua9iDASOvVl0XkI5qA/exec",
+                    url: "https://script.google.com/macros/s/AKfycbzutX8RMpo8DNxPzMZyFVBvRWSZ5IAOXvP-4zri-0xxJnU4mPtLmp8Upy2DYgCFm6FHCw/exec",
                     data: $(form).serialize(),
                     success: function () {
                         $( "#loader").hide();

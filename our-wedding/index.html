@@ -67,7 +67,7 @@
 
         <!-- start facebook comment loader -->
         <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v11.0" nonce="e7p1wJTZ"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0" nonce="e7p1wJTZ"></script>
         <!-- end facebook comment loader -->
         
         <!-- start music-box -->
@@ -656,6 +656,15 @@
                             <div class="col col-sm-12">
                                 <textarea data-translate="message_placeholder" class="form-control" name="messages" placeholder="Your Message"></textarea>
                             </div>
+                            
+                            <div class="col col-sm-12">
+                                <select class="form-control" name="sendemail" >
+                                    <option disabled selected data-translate="sendemail_placeholder">Do You Want To Receive a Confirmation Email ?*</option>
+                                    <option data-translate="yes_placeholder">Yes</option>
+                                    <option data-translate="no_placeholder">No</option>
+                                </select>
+                            </div>
+                            
                             <div class="col col-sm-12 submit-btn">
                                 <button data-translate="rsvp_submit" type="submit" class="submit">Send</button>
                                 <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>

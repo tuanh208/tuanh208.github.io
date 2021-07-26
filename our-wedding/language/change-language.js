@@ -61,6 +61,12 @@ function changeMessageLanguage(lang_dict) {
             required: lang_dict['events_rsvp_error']
         }
     });
+    $('select[name="sendemail"]').rules('add', {
+        // required: true,
+        messages: {
+            required: lang_dict['sendemail_rsvp_error']
+        }
+    });
 }
 
 
