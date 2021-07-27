@@ -274,4 +274,67 @@ else if (window.location.hash == "#khang-x20") {
     vi_pronoun="anh chị"
   )
 }
+else if (window.location.hash == "#anh-hoang-phd-x") {
+  setInvitation(
+    name_en="Hoang",
+    name_vi="anh Hoàng",
+    name_fr="Hoang",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#tram-master-x") {
+  setInvitation(
+    name_en="Tram",
+    name_vi="Trâm",
+    name_fr="Tram",
+    defaultlang="vi",
+    // vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#tuan-anh-phd-x") {
+  setInvitation(
+    name_en="Tuan Anh",
+    name_vi="Tuấn Anh",
+    name_fr="Tuan Anh",
+    defaultlang="vi",
+    // vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#daniel-x16") {
+  setInvitation(
+    name_en="the family of Daniel Huynh",
+    name_vi="gia đình bạn Daniel Huỳnh",
+    name_fr="la famille de Daniel Huynh",
+    defaultlang="fr",
+    // vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#anh-long-chi-nga") {
+  setInvitation(
+    name_en="Long and Nga",
+    name_vi="anh Long chị Nga",
+    name_fr="Long et Nga",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#tung-mva") {
+  setInvitation(
+    name_en="Tung",
+    name_vi="Tùng",
+    name_fr="Tung",
+    defaultlang="vi",
+    // vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#nguyen-mva") {
+  setInvitation(
+    name_en="Nguyen and your girlfriend",
+    name_vi="Nguyên và người thương",
+    name_fr="Nguyen et ta copine",
+    defaultlang="vi",
+    // vi_pronoun="bọn em"
+  )
+}
 }
