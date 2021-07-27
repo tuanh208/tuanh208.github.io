@@ -390,6 +390,7 @@ else if (window.location.hash == "#thao") {
     defaultlang="vi",
     vi_pronoun="anh chị"
   )
+}
 else if (window.location.hash == "#em-nga") {
   setInvitation(
     name_en="Nga",
