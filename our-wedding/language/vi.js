@@ -1,8 +1,8 @@
 var language_vi = {
     header_groom_name: "Tú Anh",
     header_bride_name: "Hải Yến",
-    description_groom: "Xin chào mình là chú rể đây!",
-    description_bride: "Xin chào mình là cô dâu đây!",
+    description_groom: "Xin chào, mình là chú rể đây!",
+    description_bride: "Xin chào, mình là cô dâu đây!",
     name_placeholder: "Tên Bạn*",
     email_placeholder: "Email Bạn*",
     numberguest_placeholder: "Số Người Tham Gia*",
@@ -44,4 +44,11 @@ var language_vi = {
     story_reunited_2: "\"Cảm ơn anh vì luôn kiên nhẫn bên em thật dịu dàng, nắm chặt tay truyền cho em thêm động lực vượt qua tất cả... Em yêu anh\" - Hải Yến",
     date_proposal: "15/08/2018 (Paris, Pháp)",
     story_proposal: "\"Cuối cùng ngày ấy cũng đến, ngày mà mình và anh em lên kế hoạch. Yến vẫn vô tư, mặt hớn hở gặm cái chân gà mà không biết điều gì sắp diễn ra. Cảm ơn anh em X Việt đã luôn hỗ trợ đến phút cuối, từ lí do, địa điểm, tấm banner siêu đẹp đến một đội hậu cần vô cùng có tâm. Giây phút cô ấy trả lời 'Có!' sẽ luôn là kỉ niệm không thể nào quên trong cuộc đời.\" - Tú Anh",
+    gallery_all: "Tất Cả",
+    gallery_hanoi: "Hà Nội",
+    gallery_paris: "Paris",
+    gallery_wedding: "Đám Cưới",
+    gallery_phuquoc: "Phú Quốc",
+    gallery_toulon: "Provence",
+    gallery_nice: "Nice",
 }

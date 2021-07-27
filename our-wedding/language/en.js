@@ -1,8 +1,8 @@
 var language_en = {
     header_groom_name: "Tú Anh",
     header_bride_name: "Hải Yến",
-    description_groom: "Hey I am the groom!",
-    description_bride: "Hey I am the bride!",
+    description_groom: "Hey, I am the groom!",
+    description_bride: "Hey, I am the bride!",
     name_placeholder: "Your Name*",
     email_placeholder: "Your Email*",
     numberguest_placeholder: "Number Of Guests*",
@@ -44,4 +44,11 @@ var language_en = {
     story_reunited_2: "\"From the bottom of my heart, I always thank you for everything you do for me. The power of your love encourages me to overcome all the challenges. I love you.\" - Hải Yến",
     date_proposal: "Aug 15 2018 (Paris, France)",
     story_proposal: "\"Finally, the day that me and my brothers planned had came. Yến was still innocent without knowing what was going to happen. Thanks to all my X-Viet brothers for all the support until the last minute. The moment when she said yes will always be an unforgettable memory in my life.\" - Tú Anh",
+    gallery_all: "All",
+    gallery_hanoi: "Hanoi",
+    gallery_paris: "Paris",
+    gallery_wedding: "Wedding",
+    gallery_phuquoc: "Phu Quoc",
+    gallery_toulon: "Provence",
+    gallery_nice: "Nice",
 }
