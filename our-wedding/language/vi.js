@@ -1,6 +1,7 @@
 var language_vi = {
     header_groom_name: "Tú Anh",
     header_bride_name: "Hải Yến",
+    menu_language: "Ngôn Ngữ",
     description_groom: "Xin chào, mình là chú rể đây!",
     description_bride: "Xin chào, mình là cô dâu đây!",
     name_placeholder: "Tên Bạn*",

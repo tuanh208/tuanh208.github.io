@@ -3,7 +3,7 @@
 
 // Create a function to change
 // the hash value of the page
-function changeLanguage(lang, init=false) {
+function changeLanguage(lang, before_rsvp_init=false) {
     // location.hash = lang;
     // location.reload();
     document.body.className=lang;
@@ -24,7 +24,7 @@ function changeLanguage(lang, init=false) {
         }
         // window.alert($(this))
      })
-    if (!init) {
+    if (!before_rsvp_init) {
         changeMessageLanguage(language_dict)
     }
     // window.alert($("#rsvp-form").errors)
@@ -74,7 +74,7 @@ function changeMessageLanguage(lang_dict) {
 // Define the language reload anchors and set default language
 // var language_dict = language_vi;
 // document.body.className='vi'
-changeLanguage('en', init=true)
+changeLanguage('en', before_rsvp_init=true)
 
 // Check if a hash value exists in the URL
 if (window.location.hash) {
@@ -82,19 +82,20 @@ if (window.location.hash) {
 // Set the content of the webpage 
 // depending on the hash value
 if (window.location.hash == "#en") {
-    changeLanguage('en')
+    changeLanguage('en', before_rsvp_init=true)
     // language_dict = language_en
     // document.body.className='en'
     // window.alert(language_dict.description_groom)
 }
 else if (window.location.hash == "#vi") {
-    changeLanguage('vi')
+    changeLanguage('vi', before_rsvp_init=true)
+
     // language_dict = language_vi
     // document.body.className='vi'
     // window.alert(language_dict.description_groom)
 }
 else if (window.location.hash == "#fr") {
-    changeLanguage('fr')
+    changeLanguage('fr', before_rsvp_init=true)
     // language_dict = language_fr
     // document.body.className='fr'
     // window.alert(language_dict.description_groom)

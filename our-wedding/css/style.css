@@ -1802,6 +1802,38 @@ label {
   }
 }
 
+@media (max-width: 767px) {
+  .hero .wedding-announcement .couple-name-merried-text h2 {
+    font-size: 55px;
+    /* font-size: 3.05556rem; */
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .wedding-announcement .couple-name-merried-text h2 {
+    font-size: 55px;
+    /* font-size: 3.05556rem; */
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero .wedding-announcement .couple-name-merried-text h2 {
+    font-size: 55px;
+    /* font-size: 3.05556rem; */
+    font-size: 2.65em;
+  }
+}
+
+@media (max-width: 345px) {
+  .hero .wedding-announcement .couple-name-merried-text h2 {
+    font-size: 55px;
+    /* font-size: 3.05556rem; */
+    font-size: 2.45em;
+  }
+}
+
 .hero .wedding-announcement .married-text h4 {
   font-size: 26px;
   font-size: 1.44444rem;

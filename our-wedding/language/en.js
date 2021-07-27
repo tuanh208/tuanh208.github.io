@@ -1,6 +1,7 @@
 var language_en = {
     header_groom_name: "Tú Anh",
     header_bride_name: "Hải Yến",
+    menu_language: "Languages",
     description_groom: "Hey, I am the groom!",
     description_bride: "Hey, I am the bride!",
     name_placeholder: "Your Name*",

@@ -1,6 +1,7 @@
 var language_fr = {
     header_groom_name: "Tú Anh",
     header_bride_name: "Hải Yến",
+    menu_language: "Langues",
     description_groom: "Salut, je suis le marié!",
     description_bride: "Salut, je suis la mariée!",
     name_placeholder: "Votre Nom*",
@@ -44,7 +45,7 @@ var language_fr = {
     story_reunited_2: "\"Du fond du cœur, je te remercie pour tout ce que tu fais pour moi. La puissance de ton amour m'encourage à surmonter tous les défis. Je t'aime.\" - Hải Yến",
     date_proposal: "15 août 2018 (Paris, France)",
     story_proposal: "\"Enfin, le jour que nous avions prévu était arrivé. Yến était toujours innocent sans savoir ce qui allait se passer. Merci à tous mes frères à X-Viet pour tout le soutien jusqu'à la dernière minute. Le moment où elle a dit oui restera un souvenir inoubliable de ma vie.\" - Tú Anh",
-    gallery_all: "All",
+    gallery_all: "Toutes",
     gallery_hanoi: "Hanoï",
     gallery_paris: "Paris",
     gallery_wedding: "Mariage",
