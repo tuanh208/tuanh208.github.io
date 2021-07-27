@@ -81,7 +81,7 @@ else if (window.location.hash == "#anh-vinh-chi-huong") {
   )
 }
 
-else if (window.location.hash == "#anh-binh-minh-x12") {
+else if (window.location.hash == "#anh-binh-minh-x13") {
   setInvitation(
     name_en="Binh Minh",
     name_vi="anh Bình Minh",
