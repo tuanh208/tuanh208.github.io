@@ -26,7 +26,7 @@ if (window.location.hash) {
 
 // Set the content of the webpage 
 // depending on the hash value
-if (window.location.hash == "#anh-quang-x13") {
+if (window.location.hash == "#anh-quang-chi-cuc") {
   setInvitation(
     name_en="Quang and Cúc",
     name_vi="anh Quang và chị Cúc",
@@ -62,7 +62,7 @@ else if (window.location.hash == "#anh-hieu-x12") {
     vi_pronoun="bọn em"
   )
 }
-else if (window.location.hash == "#anh-tu-x12-nga") {
+else if (window.location.hash == "#anh-tu-nga") {
   setInvitation(
     name_en="Tu and Nga",
     name_vi="anh Tú và Nga",
@@ -81,7 +81,7 @@ else if (window.location.hash == "#anh-vinh-chi-huong") {
   )
 }
 
-else if (window.location.hash == "#binhminh-x12") {
+else if (window.location.hash == "#anh-binh-minh-x12") {
   setInvitation(
     name_en="Binh Minh",
     name_vi="anh Bình Minh",
@@ -108,7 +108,7 @@ else if (window.location.hash == "#anh-tien-x14") {
     vi_pronoun="bọn em"
   )
 }
-else if (window.location.hash == "#anh-huy-x14-chi-phuong") {
+else if (window.location.hash == "#anh-huy-chi-phuong") {
   setInvitation(
     name_en="Huy and Phuong",
     name_vi="anh Huy và chị Phương",
@@ -237,7 +237,7 @@ else if (window.location.hash == "#quang-anh-x18") {
     vi_pronoun="anh chị"
   )
 }      
-else if (window.location.hash == "#hoang-anh-x18-ngoc") {
+else if (window.location.hash == "#hoang-anh-ngoc") {
   setInvitation(
     name_en="Hoang Anh and Ngoc",
     name_vi="Hoàng Anh và Ngọc",
@@ -247,7 +247,7 @@ else if (window.location.hash == "#hoang-anh-x18-ngoc") {
   )
 }
 
-else if (window.location.hash == "#viet-x18") {
+else if (window.location.hash == "#viet-x19") {
   setInvitation(
     name_en="Viet",
     name_vi="Việt",
@@ -256,7 +256,7 @@ else if (window.location.hash == "#viet-x18") {
     vi_pronoun="anh chị"
   )
 }
-else if (window.location.hash == "#nay-x19") {
+else if (window.location.hash == "#nay-x20") {
   setInvitation(
     name_en="Nay",
     name_vi="Nay",
@@ -265,7 +265,7 @@ else if (window.location.hash == "#nay-x19") {
     vi_pronoun="anh chị"
   )
 }
-else if (window.location.hash == "#khang-x19") {
+else if (window.location.hash == "#khang-x20") {
   setInvitation(
     name_en="Khang",
     name_vi="Khang",
