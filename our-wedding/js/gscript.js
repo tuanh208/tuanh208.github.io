@@ -35,4 +35,22 @@ if (window.location.hash == "#anh-quang-x13") {
     vi_pronoun="bọn em"
   )
 }
+else if (window.location.hash == "#anh-quang-x14") {
+  setInvitation(
+    name_en="Quang",
+    name_vi="anh Quảng",
+    name_fr="Quang",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#anh-trung-chi-nhi") {
+  setInvitation(
+    name_en="Trung and Nhi",
+    name_vi="anh Trung và chị Nhi",
+    name_fr="Trung et Nhi",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}
 }
