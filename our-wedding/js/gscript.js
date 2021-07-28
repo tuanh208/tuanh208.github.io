@@ -424,7 +424,7 @@ else if (window.location.hash == "#hoang-anh-ngo") {
     name_vi="Hoàng Anh",
     name_fr="Hoang Anh",
     defaultlang="vi",
-    vi_pronoun="anh chi"
+    vi_pronoun="anh chị"
   )
 }
 else if (window.location.hash == "#josep") {
@@ -471,7 +471,7 @@ else if (window.location.hash == "#em-quynh") {
     name_vi="Quỳnh",
     name_fr="Quynh",
     defaultlang="vi",
-    vi_pronoun="anh chi"
+    vi_pronoun="anh chị"
   )
 }
 else if (window.location.hash == "#monsieur-odon-vallet") {
@@ -501,6 +501,42 @@ else if (window.location.hash == "#famille-didier-pierrette") {
     defaultlang="fr",
     //vi_pronoun="bọn cháu"
   )
-}   
+}  
+else if (window.location.hash == "#chi-cuc") {
+  setInvitation(
+    name_en="the family of Hung and Cuc",
+    name_vi="gia đình anh Hùng chị Cúc",
+    name_fr="la famille de Hung and Cuc",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}  
+else if (window.location.hash == "#chi-huong") {
+  setInvitation(
+    name_en="the family of Colin and Huong",
+    name_vi="gia đình anh Colin chị Hương",
+    name_fr="la famille de Colin et Huong",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}  
+else if (window.location.hash == "#chi-khuyen") {
+  setInvitation(
+    name_en="Khuyen",
+    name_vi="chị Khuyên",
+    name_fr="Khuyen",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}  
+else if (window.location.hash == "#trang-anh-tu") {
+  setInvitation(
+    name_en="Trang and Tu",
+    name_vi="Trang và anh Tú",
+    name_fr="Trang et Tu",
+    defaultlang="vi",
+    // vi_pronoun="bọn em"
+  )
+}  
       
 }
