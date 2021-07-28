@@ -400,4 +400,79 @@ else if (window.location.hash == "#em-nga") {
     vi_pronoun="anh chị"
   )
 }
+else if (window.location.hash == "#chi-vi") {
+  setInvitation(
+    name_en="Vi",
+    name_vi="chị Vi",
+    name_fr="Vi",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#binh-dao") {
+  setInvitation(
+    name_en="Binh",
+    name_vi="Bình",
+    name_fr="Binh",
+    defaultlang="vi",
+    //vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#hoang-anh-ngo") {
+  setInvitation(
+    name_en="Hoang Anh",
+    name_vi="Hoàng Anh",
+    name_fr="Hoang Anh",
+    defaultlang="vi",
+    vi_pronoun="anh chi"
+  )
+}
+else if (window.location.hash == "#josep") {
+  setInvitation(
+    name_en="Josep",
+    name_vi="Josep",
+    name_fr="Josep",
+    defaultlang="vi",
+    //vi_pronoun="anh chi"
+  )
+}
+else if (window.location.hash == "#josep") {
+  setInvitation(
+    name_en="Josep",
+    name_vi="Josep",
+    name_fr="Josep",
+    defaultlang="vi",
+    //vi_pronoun="anh chi"
+  )
+}
+else if (window.location.hash == "#chi-linh") {
+  setInvitation(
+    name_en="Linh",
+    name_vi="chị Linh",
+    name_fr="Linh",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}
+else if (window.location.hash == "#tung-phan") {
+  setInvitation(
+    name_en="Tung",
+    name_vi="Tùng",
+    name_fr="Tung",
+    defaultlang="vi",
+    //vi_pronoun="anh chi"
+  )
+}
+
+else if (window.location.hash == "#ha-phuong") {
+  setInvitation(
+    name_en="Phuong",
+    name_vi="Phương",
+    name_fr="Phuong",
+    defaultlang="vi",
+    //vi_pronoun="anh chi"
+  )
+}
+      
+      
 }
