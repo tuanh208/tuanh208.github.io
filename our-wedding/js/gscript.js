@@ -538,5 +538,32 @@ else if (window.location.hash == "#trang-anh-tu") {
     // vi_pronoun="bọn em"
   )
 }  
+else if (window.location.hash == "#yen-ngoc") {
+  setInvitation(
+    name_en="Ngoc and Yen",
+    name_vi="hai em em Ngọc và Yến",
+    name_fr="Ngoc et Yen",
+    defaultlang="vi",
+    vi_pronoun="anh chị"
+  )
+}  
+else if (window.location.hash == "#que") {
+  setInvitation(
+    name_en="Que",
+    name_vi="em Quế",
+    name_fr="Que",
+    defaultlang="vi",
+    vi_pronoun="anh chị"
+  )
+}
+else if (window.location.hash == "#cau-ninh-mo-nghia") {
+  setInvitation(
+    name_en="the family of Ninh and Nghia",
+    name_vi="cậu Ninh, mợ Nghĩa và các em",
+    name_fr="la famille de Ninh et Nghia",
+    defaultlang="vi",
+    vi_pronoun="bọn cháu"
+  )
+}  
       
 }
