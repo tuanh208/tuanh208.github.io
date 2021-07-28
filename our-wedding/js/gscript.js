@@ -432,16 +432,7 @@ else if (window.location.hash == "#josep") {
     name_en="Josep",
     name_vi="Josep",
     name_fr="Josep",
-    defaultlang="vi",
-    //vi_pronoun="anh chi"
-  )
-}
-else if (window.location.hash == "#josep") {
-  setInvitation(
-    name_en="Josep",
-    name_vi="Josep",
-    name_fr="Josep",
-    defaultlang="vi",
+    defaultlang="fr",
     //vi_pronoun="anh chi"
   )
 }
@@ -474,5 +465,32 @@ else if (window.location.hash == "#ha-phuong") {
   )
 }
       
-      
+else if (window.location.hash == "#em-quynh") {
+  setInvitation(
+    name_en="Quynh",
+    name_vi="Quỳnh",
+    name_fr="Quynh",
+    defaultlang="vi",
+    vi_pronoun="anh chi"
+  )
+}
+else if (window.location.hash == "#odon-vallet") {
+  setInvitation(
+    name_en="Mr Odon Vallet",
+    name_vi="ngài Odon Vallet",
+    name_fr="Monsieur Odon Vallet",
+    defaultlang="fr",
+    vi_pronoun="bọn cháu"
+  )
+}
+
+else if (window.location.hash == "#esperan") {
+  setInvitation(
+    name_en="Espéran Padonou",
+    name_vi="Espéran Padonou",
+    name_fr="Espéran Padonou",
+    defaultlang="fr",
+    //vi_pronoun="bọn cháu"
+  )
+}
 }
