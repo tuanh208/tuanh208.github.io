@@ -565,5 +565,14 @@ else if (window.location.hash == "#cau-ninh-mo-nghia") {
     vi_pronoun="bọn cháu"
   )
 }  
+else if (window.location.hash == "#bac-hai") {
+  setInvitation(
+    name_en="the family of Hai",
+    name_vi="gia đình bác Hải",
+    name_fr="la famille de Hai",
+    defaultlang="vi",
+    vi_pronoun="bọn cháu"
+  )
+}  
       
 }
