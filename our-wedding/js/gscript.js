@@ -6,7 +6,7 @@ var invitation_start_en = "<span>Tú Anh & Hải Yến cordially invite</span>";
     invitation_start_vi = "<span>Tú Anh và Hải Yến thân mời</span>";
       invitation_end_vi = "<span>đến dự đám cưới và tiệc cưới của chúng mình.</span>";
       invitation_end_vi_no_pronoun = "<span>đến dự đám cưới và tiệc cưới của ";
-    invitation_start_fr = "<span>Tú Anh & Hải Yến sont heureux de inviter</span>";
+    invitation_start_fr = "<span>Tú Anh & Hải Yến sont heureux d'inviter</span>";
       invitation_end_fr = "<span>à nos cérémonie et réception de mariage.</span>";
 
 function setInvitation(name_en, name_vi, name_fr, defaultlang, vi_pronoun="") {
