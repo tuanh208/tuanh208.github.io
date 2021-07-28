@@ -409,6 +409,15 @@ else if (window.location.hash == "#chi-vi") {
     vi_pronoun="bọn em"
   )
 }
+else if (window.location.hash == "#chi-lien") {
+  setInvitation(
+    name_en="Liên",
+    name_vi="chị Liên",
+    name_fr="Lien",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}
 else if (window.location.hash == "#binh-dao") {
   setInvitation(
     name_en="Binh",
