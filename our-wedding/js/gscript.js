@@ -474,7 +474,7 @@ else if (window.location.hash == "#em-quynh") {
     vi_pronoun="anh chi"
   )
 }
-else if (window.location.hash == "#odon-vallet") {
+else if (window.location.hash == "#monsieur-odon-vallet") {
   setInvitation(
     name_en="Mr Odon Vallet",
     name_vi="ngài Odon Vallet",
@@ -493,4 +493,14 @@ else if (window.location.hash == "#esperan") {
     //vi_pronoun="bọn cháu"
   )
 }
+else if (window.location.hash == "#famille-didier-pierrette") {
+  setInvitation(
+    name_en="the family of Didier and Pierrette",
+    name_vi="gia đình Didier và Pierrette",
+    name_fr="la famille de Didier et Pierrette",
+    defaultlang="fr",
+    //vi_pronoun="bọn cháu"
+  )
+}   
+      
 }
