@@ -43,7 +43,7 @@ var language_vi = {
     date_reunited: "29/08/2018 (Paris, Pháp)",
     story_reunited_1: "Giấc mơ cuối cùng đã thành hiện thực, bọn mình đoàn tụ tại Paris. Bao cảm xúc bỗng chốc vỡ òa, tưởng chừng sẽ có những ngày đẹp như mơ. Nhưng một tai nạn xảy ra với Yến. Bọn mình đã cùng nhau vượt qua những cuộc phẫu thuật, cùng nhau hoàn thành các kì học, cùng chia sẻ từ nụ cười đến cả những giọt nước mắt.",
     story_reunited_2: "\"Cảm ơn anh vì luôn kiên nhẫn bên em thật dịu dàng, nắm chặt tay truyền cho em thêm động lực vượt qua tất cả... Em yêu anh\" - Hải Yến",
-    date_proposal: "15/08/2018 (Paris, Pháp)",
+    date_proposal: "15/08/2020 (Paris, Pháp)",
     story_proposal: "\"Cuối cùng ngày ấy cũng đến, ngày mà mình và anh em lên kế hoạch. Yến vẫn vô tư, mặt hớn hở gặm cái chân gà mà không biết điều gì sắp diễn ra. Cảm ơn anh em X Việt đã luôn hỗ trợ đến phút cuối, từ lí do, địa điểm, tấm banner siêu đẹp đến một đội hậu cần vô cùng có tâm. Giây phút cô ấy trả lời 'Có!' sẽ luôn là kỉ niệm không thể nào quên trong cuộc đời.\" - Tú Anh",
     gallery_all: "Tất Cả",
     gallery_hanoi: "Hà Nội",
