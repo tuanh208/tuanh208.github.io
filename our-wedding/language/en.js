@@ -43,7 +43,7 @@ var language_en = {
     date_reunited: "Aug 29 2018 (Paris, France)",
     story_reunited_1: "Finally, dreams came true, we got each other in Paris. All the emotions bursted out, we just imagined that every day would be as beautiful as dreams. Suddenly, Yến had a severe accident. Together, we went through all the surgeries, continued our studies, shared smiles and tears.",
     story_reunited_2: "\"From the bottom of my heart, I always thank you for everything you do for me. The power of your love encourages me to overcome all the challenges. I love you.\" - Hải Yến",
-    date_proposal: "Aug 15 2018 (Paris, France)",
+    date_proposal: "Aug 15 2020 (Paris, France)",
     story_proposal: "\"Finally, the day that me and my brothers planned had came. Yến was still innocent without knowing what was going to happen. Thanks to all my X-Viet brothers for all the support until the last minute. The moment when she said yes will always be an unforgettable memory in my life.\" - Tú Anh",
     gallery_all: "All",
     gallery_hanoi: "Hanoi",
