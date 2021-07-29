@@ -43,7 +43,7 @@ var language_fr = {
     date_reunited: "29 août 2018 (Paris, France)",
     story_reunited_1: "Enfin, notre rêve est devenu réalité, nous nous sommes rencontrés à Paris. Toutes les émotions ont éclatées, nous avons imaginé que chaque jour serait beau comme un rêve. Soudainement, Yến a eu un grave accident. Ensemble, nous avons passé toutes les chirurgies, continué nos études, partagé des sourires et des larmes.",
     story_reunited_2: "\"Du fond du cœur, je te remercie pour tout ce que tu fais pour moi. La puissance de ton amour m'encourage à surmonter tous les défis. Je t'aime.\" - Hải Yến",
-    date_proposal: "15 août 2018 (Paris, France)",
+    date_proposal: "15 août 2020 (Paris, France)",
     story_proposal: "\"Enfin, le jour que nous avions prévu était arrivé. Yến était toujours innocent sans savoir ce qui allait se passer. Merci à tous mes frères à X-Viet pour tout le soutien jusqu'à la dernière minute. Le moment où elle a dit oui restera un souvenir inoubliable de ma vie.\" - Tú Anh",
     gallery_all: "Toutes",
     gallery_hanoi: "Hanoï",
