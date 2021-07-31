@@ -583,7 +583,7 @@ else if (window.location.hash == "#bac-hai") {
     vi_pronoun="bọn cháu"
   )
 }  
-else if (window.location.hash == "#chi ha") {
+else if (window.location.hash == "#chi-ha") {
   setInvitation(
     name_en="Linh Ha",
     name_vi="chị Linh Hà",
