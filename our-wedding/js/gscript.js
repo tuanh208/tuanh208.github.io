@@ -585,9 +585,9 @@ else if (window.location.hash == "#bac-hai") {
 }  
 else if (window.location.hash == "#chi-ha") {
   setInvitation(
-    name_en="Linh Ha",
-    name_vi="chị Linh Hà",
-    name_fr="Linh Ha",
+    name_en="Huy and Ha",
+    name_vi="anh Huy chị Hà",
+    name_fr="Huy et Ha",
     defaultlang="vi",
     vi_pronoun="bọn em"
   )
