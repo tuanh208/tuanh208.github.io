@@ -550,7 +550,7 @@ else if (window.location.hash == "#trang-anh-tu") {
 else if (window.location.hash == "#yen-ngoc") {
   setInvitation(
     name_en="Ngoc and Yen",
-    name_vi="hai em em Ngọc và Yến",
+    name_vi="hai em Ngọc và Yến",
     name_fr="Ngoc et Yen",
     defaultlang="vi",
     vi_pronoun="anh chị"
