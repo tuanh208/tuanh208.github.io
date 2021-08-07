@@ -648,9 +648,9 @@ else if (window.location.hash == "#quan-ens") {
 }  
 else if (window.location.hash == "#dao-duc") {
   setInvitation(
-    name_en="Duc",
-    name_vi="Đức",
-    name_fr="Duc",
+    name_en="the family of Duc",
+    name_vi="vợ chồng Đức",
+    name_fr="la famille de Duc",
     defaultlang="vi",
     //vi_pronoun="bọn em"
   )
