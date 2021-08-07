@@ -630,9 +630,9 @@ else if (window.location.hash == "#anh-hiep") {
 }  
 else if (window.location.hash == "#tam-de") {
   setInvitation(
-    name_en="Tam",
-    name_vi="Tâm",
-    name_fr="Tam",
+    name_en="Tam and Quynh",
+    name_vi="Tâm và Quỳnh",
+    name_fr="Tam et Quynh",
     defaultlang="vi",
     //vi_pronoun="bọn em"
   )
