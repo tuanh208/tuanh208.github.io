@@ -727,5 +727,14 @@ else if (window.location.hash == "#huyen") {
     //vi_pronoun="bọn em"
   )
 }
+else if (window.location.hash == "#anh-hiep") {
+  setInvitation(
+    name_en="the family of Hiep",
+    name_vi="gia đình anh Hiệp",
+    name_fr="la famille de Hiep",
+    defaultlang="vi",
+    vi_pronoun="bọn em"
+  )
+}
       
 }
