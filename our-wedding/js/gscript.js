@@ -727,5 +727,14 @@ else if (window.location.hash == "#anh-hiep") {
     vi_pronoun="bọn em"
   )
 }
+else if (window.location.hash == "#anthony-x16") {
+  setInvitation(
+    name_en="Anthony Guillen",
+    name_vi="Anthony Guillen",
+    name_fr="Anthony Guillen",
+    defaultlang="fr",
+    //vi_pronoun="bọn em"
+  )
+}
       
 }
