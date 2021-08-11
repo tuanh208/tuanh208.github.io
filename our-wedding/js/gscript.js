@@ -473,6 +473,17 @@ else if (window.location.hash == "#ha-phuong") {
     //vi_pronoun="anh chi"
   )
 }
+
+else if (window.location.hash == "#quynh-trang") {
+  setInvitation(
+    name_en="Quynh Trang",
+    name_vi="Quỳnh Trang",
+    name_fr="Quynh Trang",
+    defaultlang="vi",
+    //vi_pronoun="anh chi"
+  )
+}
+  
       
 else if (window.location.hash == "#em-quynh") {
   setInvitation(
