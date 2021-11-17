@@ -1,0 +1,128 @@
+/*------------ Edit the hyperref ------------------- */
+@media screen {
+  a.external::after,
+  a[href*="://"]:not(.no-mark-external):not(.no-mark)::after,
+  a.no-push-state:not(.no-mark-external):not(.no-mark)::after {
+      /* content: "\00A0\ea7e"; */
+      content: ""!important;
+      font-family: "icomoon" !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      font-size: smaller;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: var(--menu-text)
+  }
+}
+
+/*------------ For Paper Section ------------------- */
+.label {padding:3px!important;border-radius:3px!important;font-size:14px!important;}
+.label-info {background:grey!important;color:white!important;}
+.label-danger {background:red!important;color:white!important;}
+.label-success {background:green!important;color:white!important;}
+
+/* Abstract hover */
+.label-info {
+  position: relative; 
+  cursor: pointer;
+}
+
+/* Tooltip text */
+.label-info .abstract {
+  visibility: hidden;
+  width: 30vw;
+  max-width: 500px;
+  /* background-color: black;
+  color: #fff; */
+  background-color: rgb(245,245,245);
+  color: black;
+  text-align: left;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size:12px!important;
+  text-align: justify;
+  text-justify: inter-word;
+  border: solid 1px #999;
+  box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+ 
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 100%;
+  margin-left: -60px;
+}
+
+@media (max-width: 1399px) {
+  .label-info .abstract {
+      width: 40vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .label-info .abstract {
+      width: 50vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .label-info .abstract {
+      width: 60vw;
+  }
+}
+
+.abstract {
+    width: 100%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.label-info:hover .abstract {
+  visibility: visible;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.paper-img {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.paper-text {
+  float: left;
+  width: 75%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*------------ Zoom images on hover ------------------- */
+.thumbnail{
+  cursor: pointer;
+}
+.thumbnail:hover {
+  position:relative;
+  top:50px;
+  left:100px;
+  // width:500px;
+  // height:auto;
+  transform: scale(2.5);
+  display:block;
+  z-index:999;
+}
+
+// .thumbnail:target {
+//   transform: scale(2);
+//   z-index: 5000;
+//   top: 50%;
+//   transform: translate(-50%, -50%);
+//   left: 50%;
+//   position:fixed;
+// }
