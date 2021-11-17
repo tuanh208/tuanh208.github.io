@@ -9,7 +9,7 @@
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-baseurl:               '/hydejack-min'
+# baseurl:               '/hydejack-min'
 
 
 # General settings
@@ -53,7 +53,7 @@ menu:
   - title:             Papers
     url:               /papers/
   - title:             Wedding
-    url:               https://tuanh208.github.io/our-wedding/
+    url:               /our-wedding/
 
 
 # Add links to the footer.
@@ -81,7 +81,7 @@ paginate_path:         /:num/
 # ---------------------------------------------------------------------------------------
 
 theme: jekyll-theme-hydejack
-# remote_theme: hydecorp/hydejack@v9.0.0-rc.6
+remote_theme: hydecorp/hydejack@v9.1.4
 
 
 # Customizaton
