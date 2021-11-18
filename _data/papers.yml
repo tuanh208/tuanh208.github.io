@@ -16,7 +16,7 @@
     authors: >
       Eugene Kharitonov, Ann Lee, Adam Polyak, Yossi Adi, Jade Copet, Kushal Lakhotia, 
       <b>Tu Anh Nguyen</b>, Morgane Rivière, Abdelrahman Mohamed, Emmanuel Dupoux, Wei-Ning Hsu
-    img: /assets/img/papers/p-gslm.png
+    img: /assets/img/papers/p-gslm.PNG
     abstract: >
       Speech pre-training has primarily demonstrated efficacy on classification tasks, while its capability of 
       generating novel speech, similar to how GPT-2 can generate coherent paragraphs, has barely been explored. 
@@ -107,7 +107,7 @@
     link: https://aclanthology.org/D19-5225/
     authors: >
       Jitao Xu, <b>Tu Anh Nguyen</b>, Minh Quang Pham, Josep Crego, Jean Senellart
-    img: /assets/img/papers/systran-wat19.png
+    img: /assets/img/papers/systran-wat19.PNG
     abstract: >
       This paper describes Systran’s submissions to WAT 2019 Russian-Japanese News Commentary task. 
       A challenging translation task due to the extremely low resources available and the distance 
