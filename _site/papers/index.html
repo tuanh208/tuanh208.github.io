@@ -43,7 +43,7 @@ Powered by Hydejack v9.1.4 <https://hydejack.com/>
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Papers" />
 <script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Tu Anh NGUYEN"},"@type":"WebPage","dateModified":"2021-11-17T14:34:57+01:00","url":"http://localhost:4000/papers/","author":{"@type":"Person","name":"Tu Anh NGUYEN"},"description":"Hi there, I am currently a PhD student at Inria Paris &amp; Facebook AI Research.","headline":"Papers","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Tu Anh NGUYEN"},"@type":"WebPage","dateModified":"2021-11-17T15:11:04+01:00","url":"http://localhost:4000/papers/","author":{"@type":"Person","name":"Tu Anh NGUYEN"},"description":"Hi there, I am currently a PhD student at Inria Paris &amp; Facebook AI Research.","headline":"Papers","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -105,7 +105,7 @@ Powered by Hydejack v9.1.4 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2021-11-17T15:02:15+01:00',
+    INDEX_KEY: 'index--2021-11-18T01:06:06+01:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -201,17 +201,122 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
 
   </header>
 
-  <h3 id="2021">2021</h3>
+  
+<h3 id="2021">2021</h3>
 <hr />
 
 <div class="row">
-  <div class="paper-img">
-    <img src="/assets/img/papers/uwav2vec2.png" class="thumbnail" width="200" height="200" />
+    <div class="paper-img">
+      <img src="/assets/img/papers/p-gslm.png" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://arxiv.org/abs/2109.03264"><b>Text-Free Prosody-Aware Generative Spoken Language Modeling
+</b></a> <span style="font-size:16px;"><i></i></span><br /> 
+      <span style="font-size:15px;"><i>Eugene Kharitonov, Ann Lee, Adam Polyak, Yossi Adi, Jade Copet, Kushal Lakhotia,  <b>Tu Anh Nguyen</b>, Morgane Rivière, Abdelrahman Mohamed, Emmanuel Dupoux, Wei-Ning Hsu
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">Speech pre-training has primarily demonstrated efficacy on classification tasks, while its capability of  generating novel speech, similar to how GPT-2 can generate coherent paragraphs, has barely been explored.  Generative Spoken Language Modeling (GSLM) (Lakhotia et al., 2021) is the only prior work addressing the  generative aspects of speech pre-training, which replaces text with discovered phone-like units for language  modeling and shows the ability to generate meaningful novel sentences. Unfortunately, despite eliminating  the need of text, the units used in GSLM discard most of the prosodic information. Hence, GSLM fails to  leverage prosody for better comprehension, and does not generate expressive speech. In this work, we present  a prosody-aware generative spoken language model (pGSLM). It is composed of a multi-stream transformer  language model (MS-TLM) of speech, represented as discovered unit and prosodic feature streams, and an  adapted HiFi-GAN model converting MS-TLM outputs to waveforms. We devise a series of metrics for prosody  modeling and generation, and re-use metrics from GSLM for content modeling. Experimental results show that  the pGSLM can utilize prosody to improve both prosody and content modeling, and also generate natural,  meaningful, and coherent speech given a spoken prompt.
+</span> </a> &nbsp; 
+      
+      
+        <a href="https://ai.facebook.com/blog/textless-nlp-generating-expressive-speech-from-raw-audio/" class="label label-danger">Blog</a> 
+      
+      
+        <a href="https://speechbot.github.io/pgslm/" class="label label-warning">Demo</a>
+      
+    </div>
   </div>
-  <div class="paper-text">
-    <a href="https://arxiv.org/abs/2105.11084"><b>Unsupervised Speech Recognition</b></a> In  Proc. of NeurIPS, 2021. <br /> <i>Alexei Baevski, Wei-Ning Hsu, Alexis Conneau, <b>Michael Auli</b>.</i> <br /> <a class="label label-info"> Abstract <span class="abstract">Despite rapid progress in the recent past, current speech recognition systems still require labeled training data which limits this technology to a small fraction of the languages spoken around the globe. This paper describes wav2vec-U, short for wav2vec Unsupervised, a method to train speech recognition models without any labeled data. We leverage self-supervised speech representations to segment unlabeled audio and learn a mapping from these representations to phonemes via adversarial training. The right representations are key to the success of our method. Compared to the best previous unsupervised work, wav2vec-U reduces the phoneme error rate on the TIMIT benchmark from 26.1 to 11.3. On the larger English Librispeech benchmark, wav2vec-U achieves a word error rate of 5.9 on test-other, rivaling some of the best published systems trained on 960 hours of labeled data from only two years ago. We also experiment on nine other languages, including low-resource languages such as Kyrgyz, Swahili and Tatar.</span> </a> &nbsp; <a href="https://ai.facebook.com/blog/wav2vec-unsupervised-speech-recognition-without-supervision/" class="label label-danger">Blog</a> <a href="https://github.com/pytorch/fairseq/tree/master/examples/wav2vec/unsupervised" class="label label-success">Code</a>
+
+<div class="row">
+    <div class="paper-img">
+      <img src="/assets/img/papers/gslm.png" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://arxiv.org/abs/2102.01192"><b>Generative Spoken Language Modeling from Raw Audio
+</b></a> <span style="font-size:16px;"><i>In Transactions of the Association for Computational Linguistics
+</i></span><br /> 
+      <span style="font-size:15px;"><i>Kushal Lakhotia, Evgeny Kharitonov, Wei-Ning Hsu, Yossi Adi, Adam Polyak,  Benjamin Bolte, <b>Tu Anh Nguyen</b>, Jade Copet, Alexei Baevski, Adelrahman Mohamed, Emmanuel Dupoux
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">We introduce Generative Spoken Language Modeling, the task of learning the acoustic and linguistic  characteristics of a language from raw audio (no text, no labels), and a set of metrics to automatically  evaluate the learned representations at acoustic and linguistic levels for both encoding and generation.  We set up baseline systems consisting of a discrete speech encoder (returning pseudo-text units), a  generative language model (trained on pseudo-text), and a speech decoder (generating a waveform from  pseudo-text) all trained without supervision and validate the proposed metrics with human evaluation.  Across 3 speech encoders (CPC, wav2vec 2.0, HuBERT), we find that the number of discrete units (50, 100, or 200)  matters in a task-dependent and encoder-dependent way, and that some combinations approach text-based systems.
+</span> </a> &nbsp; 
+      
+        <a href="https://github.com/pytorch/fairseq/tree/main/examples/textless_nlp/gslm" class="label label-success">Code</a>
+      
+      
+        <a href="https://ai.facebook.com/blog/textless-nlp-generating-expressive-speech-from-raw-audio/" class="label label-danger">Blog</a> 
+      
+      
+        <a href="https://speechbot.github.io/gslm/index.html" class="label label-warning">Demo</a>
+      
+    </div>
   </div>
-</div>
+
+<div class="row">
+    <div class="paper-img">
+      <img src="/assets/img/papers/zrseries21.png" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://arxiv.org/abs/2104.14700"><b>The Zero Resource Speech Challenge 2021: Spoken language modelling
+</b></a> <span style="font-size:16px;"><i>In IEEE Transactions on Pattern Analysis and Machine Intelligence
+</i></span><br /> 
+      <span style="font-size:15px;"><i>Ewan Dunbar, Mathieu Bernard, Nicolas Hamilakis, <b>Tu Anh Nguyen</b>, Maureen de Seyssel,  Patricia Rozé, Morgane Rivière, Eugene Kharitonov, Emmanuel Dupoux
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">We present the Zero Resource Speech Challenge 2021, which asks participants to learn a language model  directly from audio, without any text or labels. The challenge is based on the Libri-light dataset,  which provides up to 60k hours of audio from English audio books without any associated text. We provide  a pipeline baseline system consisting on an encoder based on contrastive predictive coding (CPC), a  quantizer (k-means) and a standard language model (BERT or LSTM). The metrics evaluate the learned  representations at the acoustic (ABX discrimination), lexical (spot-the-word), syntactic (acceptability  judgment) and semantic levels (similarity judgment). We present an overview of the eight submitted systems  from four groups and discuss the main results.
+</span> </a> &nbsp; 
+      
+        <a href="https://github.com/bootphon/zerospeech2021" class="label label-success">Code</a>
+      
+      
+        <a href="https://zerospeech.com/2021/results.html" class="label label-danger">Blog</a> 
+      
+      
+    </div>
+  </div>
+
+<h3 id="2020">2020</h3>
+<hr />
+
+<div class="row">
+    <div class="paper-img">
+      <img src="/assets/img/papers/zs2021-metrics.png" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://arxiv.org/abs/2011.11588"><b>The Zero Resource Speech Benchmark 2021: Metrics and baselines for unsupervised spoken language modeling
+</b></a> <span style="font-size:16px;"><i>In NeurIPS SAS 2020 Workshop
+</i></span><br /> 
+      <span style="font-size:15px;"><i><b>Tu Anh Nguyen</b>, Maureen de Seyssel, Patricia Rozé, Morgane Rivière,  Evgeny Kharitonov, Alexei Baevski, Ewan Dunbar, Emmanuel Dupoux
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">We introduce a new unsupervised task, spoken language modeling: the learning of linguistic  representations from raw audio signals without any labels, along with the Zero Resource Speech  Benchmark 2021: a suite of 4 black-box, zero-shot metrics probing for the quality of the learned  models at 4 linguistic levels: phonetics, lexicon, syntax and semantics. We present the results  and analyses of a composite baseline made of the concatenation of three unsupervised systems:  self-supervised contrastive representation learning (CPC), clustering (k-means) and language  modeling (LSTM or BERT). The language models learn on the basis of the pseudo-text derived from  clustering the learned representations. This simple pipeline shows better than chance performance  on all four metrics, demonstrating the feasibility of spoken language modeling from raw speech.  It also yields worse performance compared to text-based 'topline' systems trained on the same data,  delineating the space to be explored by more sophisticated end-to-end models.
+</span> </a> &nbsp; 
+      
+        <a href="https://github.com/bootphon/zerospeech2021_baseline" class="label label-success">Code</a>
+      
+      
+        <a href="https://zerospeech.com/2021/track_s.html" class="label label-danger">Blog</a> 
+      
+      
+    </div>
+  </div>
+
+<h3 id="2019">2019</h3>
+<hr />
+
+<div class="row">
+    <div class="paper-img">
+      <img src="/assets/img/papers/systran-wat19.png" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://aclanthology.org/D19-5225/"><b>SYSTRAN @ WAT 2019: Russian-Japanese News Commentary task
+</b></a> <span style="font-size:16px;"><i>In Proc. of the 6th Workshop on Asian Translation
+</i></span><br /> 
+      <span style="font-size:15px;"><i>Jitao Xu, <b>Tu Anh Nguyen</b>, Minh Quang Pham, Josep Crego, Jean Senellart
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">This paper describes Systran’s submissions to WAT 2019 Russian-Japanese News Commentary task.  A challenging translation task due to the extremely low resources available and the distance  of the language pair. We have used the neural Transformer architecture learned over the provided  resources and we carried out synthetic data generation experiments which aim at alleviating the  data scarcity problem. Results indicate the suitability of the data augmentation experiments,  enabling our systems to rank first according to automatic evaluations.</span> </a> &nbsp; 
+      
+      
+      
+    </div>
+  </div>
+
 
 </article>
 
@@ -327,7 +432,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
       <li>
         <a
           
-          href="https://tuanh208.github.io/our-wedding/"
+          href="/our-wedding/"
           class="sidebar-nav-item "
           
         >
@@ -410,9 +515,9 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
   
 
   <li>
-    <a href="https://soundcloud.com/tuanh208" title="SoundCloud" class="no-mark-external">
-      <span class="icon-soundcloud"></span>
-      <span class="sr-only">SoundCloud</span>
+    <a href="https://scholar.google.com/citations?user=TzZXAm4AAAAJ" title="Google Scholar" class="no-mark-external">
+      <span class="icon-google-scholar"></span>
+      <span class="sr-only">Google Scholar</span>
     </a>
   </li>
 

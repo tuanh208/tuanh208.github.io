@@ -1,0 +1,117 @@
+# Template for new paper
+  # - title: >
+  #   where: >
+  #   link: 
+  #   authors: >
+  #   img: 
+  #   abstract: >
+  #   blog: 
+  #   code: 
+# -------------------------------------------
+2021:
+  - title: >
+      Text-Free Prosody-Aware Generative Spoken Language Modeling
+    where: 
+    link: https://arxiv.org/abs/2109.03264
+    authors: >
+      Eugene Kharitonov, Ann Lee, Adam Polyak, Yossi Adi, Jade Copet, Kushal Lakhotia, 
+      <b>Tu Anh Nguyen</b>, Morgane Rivière, Abdelrahman Mohamed, Emmanuel Dupoux, Wei-Ning Hsu
+    img: /assets/img/papers/p-gslm.png
+    abstract: >
+      Speech pre-training has primarily demonstrated efficacy on classification tasks, while its capability of 
+      generating novel speech, similar to how GPT-2 can generate coherent paragraphs, has barely been explored. 
+      Generative Spoken Language Modeling (GSLM) (Lakhotia et al., 2021) is the only prior work addressing the 
+      generative aspects of speech pre-training, which replaces text with discovered phone-like units for language 
+      modeling and shows the ability to generate meaningful novel sentences. Unfortunately, despite eliminating 
+      the need of text, the units used in GSLM discard most of the prosodic information. Hence, GSLM fails to 
+      leverage prosody for better comprehension, and does not generate expressive speech. In this work, we present 
+      a prosody-aware generative spoken language model (pGSLM). It is composed of a multi-stream transformer 
+      language model (MS-TLM) of speech, represented as discovered unit and prosodic feature streams, and an 
+      adapted HiFi-GAN model converting MS-TLM outputs to waveforms. We devise a series of metrics for prosody 
+      modeling and generation, and re-use metrics from GSLM for content modeling. Experimental results show that 
+      the pGSLM can utilize prosody to improve both prosody and content modeling, and also generate natural, 
+      meaningful, and coherent speech given a spoken prompt.
+    blog: https://ai.facebook.com/blog/textless-nlp-generating-expressive-speech-from-raw-audio/
+    code: 
+    demo: https://speechbot.github.io/pgslm/
+  - title: >
+      Generative Spoken Language Modeling from Raw Audio
+    where: >
+      In Transactions of the Association for Computational Linguistics
+    link: https://arxiv.org/abs/2102.01192
+    authors: >
+      Kushal Lakhotia, Evgeny Kharitonov, Wei-Ning Hsu, Yossi Adi, Adam Polyak, 
+      Benjamin Bolte, <b>Tu Anh Nguyen</b>, Jade Copet, Alexei Baevski, Adelrahman Mohamed, Emmanuel Dupoux
+    img: /assets/img/papers/gslm.png
+    abstract: >
+      We introduce Generative Spoken Language Modeling, the task of learning the acoustic and linguistic 
+      characteristics of a language from raw audio (no text, no labels), and a set of metrics to automatically 
+      evaluate the learned representations at acoustic and linguistic levels for both encoding and generation. 
+      We set up baseline systems consisting of a discrete speech encoder (returning pseudo-text units), a 
+      generative language model (trained on pseudo-text), and a speech decoder (generating a waveform from 
+      pseudo-text) all trained without supervision and validate the proposed metrics with human evaluation. 
+      Across 3 speech encoders (CPC, wav2vec 2.0, HuBERT), we find that the number of discrete units (50, 100, or 200) 
+      matters in a task-dependent and encoder-dependent way, and that some combinations approach text-based systems.
+    blog: https://ai.facebook.com/blog/textless-nlp-generating-expressive-speech-from-raw-audio/
+    code: https://github.com/pytorch/fairseq/tree/main/examples/textless_nlp/gslm
+    demo: https://speechbot.github.io/gslm/index.html
+  - title: >
+      The Zero Resource Speech Challenge 2021: Spoken language modelling
+    where: >
+      In IEEE Transactions on Pattern Analysis and Machine Intelligence
+    link: https://arxiv.org/abs/2104.14700
+    authors: >
+      Ewan Dunbar, Mathieu Bernard, Nicolas Hamilakis, <b>Tu Anh Nguyen</b>, Maureen de Seyssel, 
+      Patricia Rozé, Morgane Rivière, Eugene Kharitonov, Emmanuel Dupoux
+    img: /assets/img/papers/zrseries21.png
+    abstract: >
+      We present the Zero Resource Speech Challenge 2021, which asks participants to learn a language model 
+      directly from audio, without any text or labels. The challenge is based on the Libri-light dataset, 
+      which provides up to 60k hours of audio from English audio books without any associated text. We provide 
+      a pipeline baseline system consisting on an encoder based on contrastive predictive coding (CPC), a 
+      quantizer (k-means) and a standard language model (BERT or LSTM). The metrics evaluate the learned 
+      representations at the acoustic (ABX discrimination), lexical (spot-the-word), syntactic (acceptability 
+      judgment) and semantic levels (similarity judgment). We present an overview of the eight submitted systems 
+      from four groups and discuss the main results.
+    blog: https://zerospeech.com/2021/results.html
+    code: https://github.com/bootphon/zerospeech2021
+2020:
+  - title: >
+      The Zero Resource Speech Benchmark 2021: Metrics and baselines for unsupervised spoken language modeling
+    where: >
+      In NeurIPS SAS 2020 Workshop
+    link: https://arxiv.org/abs/2011.11588
+    authors: >
+      <b>Tu Anh Nguyen</b>, Maureen de Seyssel, Patricia Rozé, Morgane Rivière, 
+      Evgeny Kharitonov, Alexei Baevski, Ewan Dunbar, Emmanuel Dupoux
+    img: /assets/img/papers/zs2021-metrics.png
+    abstract: >
+      We introduce a new unsupervised task, spoken language modeling: the learning of linguistic 
+      representations from raw audio signals without any labels, along with the Zero Resource Speech 
+      Benchmark 2021: a suite of 4 black-box, zero-shot metrics probing for the quality of the learned 
+      models at 4 linguistic levels: phonetics, lexicon, syntax and semantics. We present the results 
+      and analyses of a composite baseline made of the concatenation of three unsupervised systems: 
+      self-supervised contrastive representation learning (CPC), clustering (k-means) and language 
+      modeling (LSTM or BERT). The language models learn on the basis of the pseudo-text derived from 
+      clustering the learned representations. This simple pipeline shows better than chance performance 
+      on all four metrics, demonstrating the feasibility of spoken language modeling from raw speech. 
+      It also yields worse performance compared to text-based 'topline' systems trained on the same data, 
+      delineating the space to be explored by more sophisticated end-to-end models.
+    blog: https://zerospeech.com/2021/track_s.html
+    code: https://github.com/bootphon/zerospeech2021_baseline
+2019:
+  - title: >
+      SYSTRAN @ WAT 2019: Russian-Japanese News Commentary task
+    where: >
+      In Proc. of the 6th Workshop on Asian Translation
+    link: https://aclanthology.org/D19-5225/
+    authors: >
+      Jitao Xu, <b>Tu Anh Nguyen</b>, Minh Quang Pham, Josep Crego, Jean Senellart
+    img: /assets/img/papers/systran-wat19.png
+    abstract: >
+      This paper describes Systran’s submissions to WAT 2019 Russian-Japanese News Commentary task. 
+      A challenging translation task due to the extremely low resources available and the distance 
+      of the language pair. We have used the neural Transformer architecture learned over the provided 
+      resources and we carried out synthetic data generation experiments which aim at alleviating the 
+      data scarcity problem. Results indicate the suitability of the data augmentation experiments, 
+      enabling our systems to rank first according to automatic evaluations.

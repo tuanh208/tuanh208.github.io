@@ -24,9 +24,11 @@
 .label-info {background:grey!important;color:white!important;}
 .label-danger {background:red!important;color:white!important;}
 .label-success {background:green!important;color:white!important;}
+.label-warning {background:orange!important;color:white!important;}
 
 /* Abstract hover */
 .label-info {
+  padding-left: 5px!important;
   position: relative; 
   cursor: pointer;
 }
@@ -75,10 +77,6 @@
   }
 }
 
-.abstract {
-    width: 100%;
-}
-
 /* Show the tooltip text when you mouse over the tooltip container */
 .label-info:hover .abstract {
   visibility: visible;
@@ -116,6 +114,7 @@
   transform: scale(2.5);
   display:block;
   z-index:999;
+  box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 // .thumbnail:target {
