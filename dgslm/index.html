@@ -36,13 +36,14 @@
 <div class="content-container">
     <script src="wavesurfer.js"></script>
 <div class="content-title">Conditional Examples</div>
-<p><i>In conditional generation, the system encodes a waveform prompt
-    into pseudo-text, which is fed to the language model 
-        from which a continuation is sampled. The resulting extended pseudo-text is then fed to the decoder to produce a new waveform. 
+<p><i>In conditional generation, the system encodes a stereo waveform prompt
+    into two parallel streams of discrete units (or pseudo-text), which are fed to the Dialogue Language Model (DLM) system,
+        a system attending to both unit streams with the help of cross-attention.
+        The DLM model then generates new pseudo-text and feed them to the decoder to produce a new waveform. 
         The entire pipeline is trained without supervision or
-    text. Below are samples from our worst and best models,
-    compared to a supervised system 
-        trained from text.</i></p>   
+    text.</i><br>Below are samples from our best model,
+    compared to the ground truth. Note that the synthesized speakers are different from the original ones, 
+    but we deliberately choose the speakers with the same gender as in original speech.</p>   
     <table border = "1" class="inlineTable" id="Table1">
         <col width="30">
         <col width="300">
@@ -77,7 +78,9 @@
                     var wavesurfer_prompts_1 = WaveSurfer.create({
                                 container: '#prompts_1_header_waveform',
                                 waveColor: 'violet',
-                                progressColor: 'purple'
+                                progressColor: 'purple',
+                                splitChannels: true,
+                                responsive: true,
                             });
                     wavesurfer_prompts_1.load('./audio/stereo/Prompts-Original/fe_03_11555_0s_10s.wav');
                 </script>
@@ -95,7 +98,9 @@
                     var wavesurfer_logmel_1 = WaveSurfer.create({
                                 container: '#logmel_1_header_waveform',
                                 waveColor: 'violet',
-                                progressColor: 'purple'
+                                progressColor: 'purple',
+                                splitChannels: true,
+                                responsive: true,
                             });
                     wavesurfer_logmel_1.load('./audio/stereo/Prompts-Resynthesized/fe_03_11555_0s_10s.wav');
                 </script>
@@ -113,7 +118,9 @@
                     var wavesurfer_hubert_1 = WaveSurfer.create({
                                 container: '#hubert_1_header_waveform',
                                 waveColor: 'violet',
-                                progressColor: 'purple'
+                                progressColor: 'purple',
+                                splitChannels: true,
+                                responsive: true,
                             });
                     wavesurfer_hubert_1.load('./audio/stereo/GroundTruth-Resynthesized/fe_03_11555_0s_10s.wav');
                 </script>
@@ -131,7 +138,9 @@
                     var wavesurfer_asr_1 = WaveSurfer.create({
                                 container: '#asr_1_header_waveform',
                                 waveColor: 'violet',
-                                progressColor: 'purple'
+                                progressColor: 'purple',
+                                splitChannels: true,
+                                responsive: true,
                             });
                     wavesurfer_asr_1.load('./audio/stereo/dGSLM/fe_03_11555_0s_10s.wav');
                 </script>
@@ -152,7 +161,9 @@
                     var wavesurfer_prompts_2 = WaveSurfer.create({
                                 container: '#prompts_2_header_waveform',
                                 waveColor: 'violet',
-                                progressColor: 'purple'
+                                progressColor: 'purple',
+                                splitChannels: true,
+                                responsive: true,
                             });
                     wavesurfer_prompts_2.load('./audio/stereo/Prompts-Original/fe_03_11501_63s_73s.wav');
                 </script>
@@ -170,7 +181,9 @@
                     var wavesurfer_logmel_2 = WaveSurfer.create({
                                 container: '#logmel_2_header_waveform',
                                 waveColor: 'violet',
-                                progressColor: 'purple'
+                                progressColor: 'purple',
+                                splitChannels: true,
+                                responsive: true,
                             });
                     wavesurfer_logmel_2.load('./audio/stereo/Prompts-Resynthesized/fe_03_11501_63s_73s.wav');
                 </script>
@@ -188,7 +201,9 @@
                     var wavesurfer_hubert_2 = WaveSurfer.create({
                                 container: '#hubert_2_header_waveform',
                                 waveColor: 'violet',
-                                progressColor: 'purple'
+                                progressColor: 'purple',
+                                splitChannels: true,
+                                responsive: true,
                             });
                     wavesurfer_hubert_2.load('./audio/stereo/GroundTruth-Resynthesized/fe_03_11501_63s_73s.wav');
                 </script>
@@ -206,7 +221,9 @@
                     var wavesurfer_asr_2 = WaveSurfer.create({
                                 container: '#asr_2_header_waveform',
                                 waveColor: 'violet',
-                                progressColor: 'purple'
+                                progressColor: 'purple',
+                                splitChannels: true,
+                                responsive: true,
                             });
                     wavesurfer_asr_2.load('./audio/stereo/dGSLM/fe_03_11501_63s_73s.wav');
                 </script>
@@ -218,15 +235,54 @@
 <div class="content-container">
     <script src="wavesurfer.js"></script>
 <div class="content-title">Unconditional Examples</div>
-<p><i>In unconditional generation, a pseudo-text is sampled from the
-    language model and synthetized into a waveform. </i></p>
-    
+<p><i>In unconditional generation, two parallel streams of pseudo-text are sampled from the 
+    DLM and synthetized into a waveform. </i></p>
+    <p><b>Generation 1 </b></p>
+    <div id="uncond_1_header_waveform"></div>
+    <button id="uncond_1_header" class="play-button-demo btn btn-primary" onclick="wavesurfer_uncond_1.playPause()">
+        <i class="fa fa-play"></i>
+        Play
+        /
+        <i class="fa fa-pause"></i>
+        Pause
+    </button>
+    <script>
+        var wavesurfer_uncond_1 = WaveSurfer.create({
+                    container: '#uncond_1_header_waveform',
+                    waveColor: 'violet',
+                    progressColor: 'purple',
+                    splitChannels: true,
+                    responsive: true,
+                });
+                wavesurfer_uncond_1.load('./audio/uncond_generation/Generation_1.wav');
+    </script>
+
+<p><b>Generation 2 </b></p>
+    <div id="uncond_2_header_waveform"></div>
+    <button id="uncond_2_header" class="play-button-demo btn btn-primary" onclick="wavesurfer_uncond_2.playPause()">
+        <i class="fa fa-play"></i>
+        Play
+        /
+        <i class="fa fa-pause"></i>
+        Pause
+    </button>
+    <script>
+        var wavesurfer_uncond_2 = WaveSurfer.create({
+                    container: '#uncond_2_header_waveform',
+                    waveColor: 'violet',
+                    progressColor: 'purple',
+                    splitChannels: true,
+                    responsive: true,
+                });
+                wavesurfer_uncond_2.load('./audio/uncond_generation/Generation_2.wav');
+    </script>
 </div>
 
 <div class="content-container">
-    <div class="content-title">Samples</div>
+    <div class="content-title">Conditional Samples from All Algorithms</div>
     <div id='task-description' style="margin-bottom: 1cm;">
-        More samples are provided below, with all the language models studied in the paper.
+        More conditional samples are provided below, with all the language models studied in the paper. <br>
+        You will also hear a <b>ding</b> sound at the end of the prompt duration.
     </div>
     <!-- <div class="option-div">
     <label for="dataset">Choose a dataset:</label>
