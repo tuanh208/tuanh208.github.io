@@ -28,7 +28,7 @@ description:           >
   Hi there, I am currently a PhD student at Inria Paris & Facebook AI Research.
 
 # A shorter description for the sidebar.
-tagline:               Simple mannnn.
+tagline:               Simple man.
 
 # A list of keywords for your blog
 keywords:              []
@@ -54,6 +54,8 @@ menu:
     url:               /papers/
   - title:             Wedding
     url:               /our-wedding/
+  - title:             ABC
+    url:               /dgslm/
 
 
 # Add links to the footer.
