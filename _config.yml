@@ -54,6 +54,8 @@ menu:
     url:               /papers/
   - title:             Wedding
     url:               /our-wedding/
+  - title:             ABC
+    url:               /dgslm/
 
 
 # Add links to the footer.
