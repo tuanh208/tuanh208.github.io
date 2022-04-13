@@ -105,7 +105,7 @@ Powered by Hydejack v9.1.4 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2022-03-25T03:41:48+01:00',
+    INDEX_KEY: 'index--2022-04-13T17:48:16+02:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -202,8 +202,91 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
   </header>
 
   
+<h3 id="2022">2022</h3>
+<hr />
+
+<div class="row">
+    <div class="paper-img">
+      <img src="/assets/img/papers/dgslm.png" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://arxiv.org/abs/2203.16502"><b>Generative Spoken Dialogue Language Modeling
+</b></a> <span style="font-size:16px;"><i></i></span><br /> 
+      <span style="font-size:15px;"><i><b>Tu Anh Nguyen</b>, Eugene Kharitonov, Jade Copet, Yossi Adi, Wei-Ning Hsu, Ali Elkahky, Paden Tomasello,  Robin Algayres, Benoit Sagot, Abdelrahman Mohamed, Emmanuel Dupoux
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">We introduce dGSLM, the first "textless" model able to generate audio samples of naturalistic spoken dialogues.  It uses recent work on unsupervised spoken unit discovery coupled with a dual-tower transformer architecture  with cross-attention trained on 2000 hours of two-channel raw conversational audio (Fisher dataset) without  any text or labels. It is able to generate speech, laughter and other paralinguistic signals in the two channels  simultaneously and reproduces naturalistic turn taking. 
+</span> </a> &nbsp; 
+      
+      
+        <a href="https://ai.facebook.com/blog/generating-chit-chat-including-laughs-yawns-ums-and-other-nonverbal-cues-from-raw-audio/" class="label label-danger">Blog</a> 
+      
+      
+        <a href="https://speechbot.github.io/dgslm/" class="label label-warning">Demo</a>
+      
+    </div>
+  </div>
+
+<div class="row">
+    <div class="paper-img">
+      <img src="/assets/img/papers/discreteunits.png" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://arxiv.org/abs/2203.05936"><b>Are discrete units necessary for Spoken Language Modeling?
+</b></a> <span style="font-size:16px;"><i></i></span><br /> 
+      <span style="font-size:15px;"><i><b>Tu Anh Nguyen</b>, Benoit Sagot, Emmanuel Dupoux
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">Recent work in spoken language modeling shows the possibility of learning a language unsupervisedly from  raw audio without any text labels. The approach relies first on transforming the audio into a sequence of  discrete units (or pseudo-text) and then training a language model directly on such pseudo-text. Is such a  discrete bottleneck necessary, potentially introducing irreversible errors in the encoding of the speech  signal, or could we learn a language model without discrete units at all? In this work, show that  discretization is indeed essential for good results in spoken language modeling, but that can omit the  discrete bottleneck if we use using discrete target features from a higher level than the input features. We also show that an end-to-end model trained with discrete target like HuBERT achieves similar results as  the best language model trained on pseudo-text on a set of zero-shot spoken language modeling metrics from  the Zero Resource Speech Challenge 2021. 
+</span> </a> &nbsp; 
+      
+      
+      
+    </div>
+  </div>
+
+<div class="row">
+    <div class="paper-img">
+      <img src="/assets/img/papers/textlesslib.PNG" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://arxiv.org/abs/2202.07359"><b>textless-lib: a Library for Textless Spoken Language Processing
+</b></a> <span style="font-size:16px;"><i></i></span><br /> 
+      <span style="font-size:15px;"><i>Eugene Kharitonov, Jade Copet, Kushal Lakhotia, <b>Tu Anh Nguyen</b>, Paden Tomasello, Ann Lee,  Ali Elkahky, Wei-Ning Hsu, Abdelrahman Mohamed, Emmanuel Dupoux, Yossi Adi
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">Textless spoken language processing research aims to extend the applicability of standard NLP toolset  onto spoken language and languages with few or no textual resources. In this paper, we introduce  textless-lib, a PyTorch-based library aimed to facilitate research in this research area. We describe  the building blocks that the library provides and demonstrate its usability by discuss three different  use-case examples: (i) speaker probing, (ii) speech resynthesis and compression, and (iii) speech  continuation. We believe that textless-lib substantially simplifies research the textless setting  and will be handful not only for speech researchers but also for the NLP community at large.
+</span> </a> &nbsp; 
+      
+        <a href="https://github.com/facebookresearch/textlesslib" class="label label-success">Code</a>
+      
+      
+        <a href="https://ai.facebook.com/blog/generating-chit-chat-including-laughs-yawns-ums-and-other-nonverbal-cues-from-raw-audio/" class="label label-danger">Blog</a> 
+      
+      
+    </div>
+  </div>
+
 <h3 id="2021">2021</h3>
 <hr />
+
+<div class="row">
+    <div class="paper-img">
+      <img src="/assets/img/papers/emotion.PNG" class="thumbnail" width="200" height="200" />
+    </div>
+    <div class="paper-text">
+      <a href="https://arxiv.org/abs/2111.07402"><b>Textless speech emotion conversion using decomposed and discrete representations
+</b></a> <span style="font-size:16px;"><i></i></span><br /> 
+      <span style="font-size:15px;"><i>Felix Kreuk, Adam Polyak, Jade Copet, Eugene Kharitonov, <b>Tu Anh Nguyen</b>, Morgane Revière, Wei-Ning Hsu, Abdelrahman Mohamed, Emmanuel Dupoux, Yossi Adi
+</i></span> <br /> 
+      <a class="label label-info"> Abstract <span class="abstract">Speech emotion conversion is the task of modifying the perceived emotion of a speech utterance while  preserving the lexical content and speaker identity. In this study, we cast the problem of emotion  conversion as a spoken language translation task. We use a decomposition of the speech signal into  discrete learned representations, consisting of phonetic-content units, prosodic features, speaker,  and emotion. First, we modify the speech content by translating the phonetic-content units to a  target emotion, and then predict the prosodic features based on these units. Finally, the speech  waveform is generated by feeding the predicted representations into a neural vocoder. Such a paradigm  allows us to go beyond spectral and parametric changes of the signal, and model non-verbal vocalizations,  such as laughter insertion, yawning removal, etc. We demonstrate objectively and subjectively that the  proposed method is vastly superior to current approaches and even beats text-based systems in terms of  perceived emotion and audio quality. We rigorously evaluate all components of such a complex system and  conclude with an extensive model analysis and ablation study to better emphasize the architectural choices,  strengths and weaknesses of the proposed method.
+</span> </a> &nbsp; 
+      
+      
+        <a href="https://ai.facebook.com/blog/generating-chit-chat-including-laughs-yawns-ums-and-other-nonverbal-cues-from-raw-audio/" class="label label-danger">Blog</a> 
+      
+      
+        <a href="https://speechbot.github.io/emotion/" class="label label-warning">Demo</a>
+      
+    </div>
+  </div>
 
 <div class="row">
     <div class="paper-img">
@@ -211,11 +294,13 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
     </div>
     <div class="paper-text">
       <a href="https://arxiv.org/abs/2109.03264"><b>Text-Free Prosody-Aware Generative Spoken Language Modeling
-</b></a> <span style="font-size:16px;"><i></i></span><br /> 
-      <span style="font-size:15px;"><i>Eugene Kharitonov, Ann Lee, Adam Polyak, Yossi Adi, Jade Copet, Kushal Lakhotia,  <b>Tu Anh Nguyen</b>, Morgane Rivière, Abdelrahman Mohamed, Emmanuel Dupoux, Wei-Ning Hsu
+</b></a> <span style="font-size:16px;"><i>In Proc. of ACL 2022</i></span><br /> 
+      <span style="font-size:15px;"><i>Eugene Kharitonov*, Ann Lee*, Adam Polyak, Yossi Adi, Jade Copet, Kushal Lakhotia,  <b>Tu Anh Nguyen</b>, Morgane Rivière, Abdelrahman Mohamed, Emmanuel Dupoux, Wei-Ning Hsu
 </i></span> <br /> 
       <a class="label label-info"> Abstract <span class="abstract">Speech pre-training has primarily demonstrated efficacy on classification tasks, while its capability of  generating novel speech, similar to how GPT-2 can generate coherent paragraphs, has barely been explored.  Generative Spoken Language Modeling (GSLM) (Lakhotia et al., 2021) is the only prior work addressing the  generative aspects of speech pre-training, which replaces text with discovered phone-like units for language  modeling and shows the ability to generate meaningful novel sentences. Unfortunately, despite eliminating  the need of text, the units used in GSLM discard most of the prosodic information. Hence, GSLM fails to  leverage prosody for better comprehension, and does not generate expressive speech. In this work, we present  a prosody-aware generative spoken language model (pGSLM). It is composed of a multi-stream transformer  language model (MS-TLM) of speech, represented as discovered unit and prosodic feature streams, and an  adapted HiFi-GAN model converting MS-TLM outputs to waveforms. We devise a series of metrics for prosody  modeling and generation, and re-use metrics from GSLM for content modeling. Experimental results show that  the pGSLM can utilize prosody to improve both prosody and content modeling, and also generate natural,  meaningful, and coherent speech given a spoken prompt.
 </span> </a> &nbsp; 
+      
+        <a href="https://github.com/pytorch/fairseq/tree/main/examples/textless_nlp/pgslm" class="label label-success">Code</a>
       
       
         <a href="https://ai.facebook.com/blog/textless-nlp-generating-expressive-speech-from-raw-audio/" class="label label-danger">Blog</a> 
@@ -255,8 +340,8 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
       <img src="/assets/img/papers/zrseries21.png" class="thumbnail" width="200" height="200" />
     </div>
     <div class="paper-text">
-      <a href="https://arxiv.org/abs/2104.14700"><b>The Zero Resource Speech Challenge 2021: Spoken language modelling
-</b></a> <span style="font-size:16px;"><i>In IEEE Transactions on Pattern Analysis and Machine Intelligence
+      <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2021/dunbar21_interspeech.pdf"><b>The Zero Resource Speech Challenge 2021: Spoken language modelling
+</b></a> <span style="font-size:16px;"><i>In Proc. Interspeech 2021
 </i></span><br /> 
       <span style="font-size:15px;"><i>Ewan Dunbar, Mathieu Bernard, Nicolas Hamilakis, <b>Tu Anh Nguyen</b>, Maureen de Seyssel,  Patricia Rozé, Morgane Rivière, Eugene Kharitonov, Emmanuel Dupoux
 </i></span> <br /> 
@@ -281,9 +366,9 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
     </div>
     <div class="paper-text">
       <a href="https://arxiv.org/abs/2011.11588"><b>The Zero Resource Speech Benchmark 2021: Metrics and baselines for unsupervised spoken language modeling
-</b></a> <span style="font-size:16px;"><i>In NeurIPS SAS 2020 Workshop
+</b></a> <span style="font-size:16px;"><i>In NeurIPS 2020 Workshop on Self-Supervised Learning for Speech and Audio Processing
 </i></span><br /> 
-      <span style="font-size:15px;"><i><b>Tu Anh Nguyen</b>, Maureen de Seyssel, Patricia Rozé, Morgane Rivière,  Evgeny Kharitonov, Alexei Baevski, Ewan Dunbar, Emmanuel Dupoux
+      <span style="font-size:15px;"><i><b>Tu Anh Nguyen*</b>, Maureen de Seyssel*, Patricia Rozé, Morgane Rivière,  Evgeny Kharitonov, Alexei Baevski, Ewan Dunbar, Emmanuel Dupoux
 </i></span> <br /> 
       <a class="label label-info"> Abstract <span class="abstract">We introduce a new unsupervised task, spoken language modeling: the learning of linguistic  representations from raw audio signals without any labels, along with the Zero Resource Speech  Benchmark 2021: a suite of 4 black-box, zero-shot metrics probing for the quality of the learned  models at 4 linguistic levels: phonetics, lexicon, syntax and semantics. We present the results  and analyses of a composite baseline made of the concatenation of three unsupervised systems:  self-supervised contrastive representation learning (CPC), clustering (k-means) and language  modeling (LSTM or BERT). The language models learn on the basis of the pseudo-text derived from  clustering the learned representations. This simple pipeline shows better than chance performance  on all four metrics, demonstrating the feasibility of spoken language modeling from raw speech.  It also yields worse performance compared to text-based 'topline' systems trained on the same data,  delineating the space to be explored by more sophisticated end-to-end models.
 </span> </a> &nbsp; 
@@ -316,6 +401,9 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79,177,186,0.5);
       
     </div>
   </div>
+
+<p><br />
+* Equal contribution as first authors.</p>
 
 
 </article>

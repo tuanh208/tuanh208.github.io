@@ -8,13 +8,96 @@
   #   blog: 
   #   code: 
 # -------------------------------------------
+2022:
+  - title: >
+      Generative Spoken Dialogue Language Modeling
+    where: 
+    link: https://arxiv.org/abs/2203.16502
+    authors: >
+      <b>Tu Anh Nguyen</b>, Eugene Kharitonov, Jade Copet, Yossi Adi, Wei-Ning Hsu, Ali Elkahky, Paden Tomasello, 
+      Robin Algayres, Benoit Sagot, Abdelrahman Mohamed, Emmanuel Dupoux
+    img: /assets/img/papers/dgslm.png
+    abstract: >
+      We introduce dGSLM, the first "textless" model able to generate audio samples of naturalistic spoken dialogues. 
+      It uses recent work on unsupervised spoken unit discovery coupled with a dual-tower transformer architecture 
+      with cross-attention trained on 2000 hours of two-channel raw conversational audio (Fisher dataset) without 
+      any text or labels. It is able to generate speech, laughter and other paralinguistic signals in the two channels 
+      simultaneously and reproduces naturalistic turn taking. 
+    blog: https://ai.facebook.com/blog/generating-chit-chat-including-laughs-yawns-ums-and-other-nonverbal-cues-from-raw-audio/
+    code: 
+    demo: https://speechbot.github.io/dgslm/
+  - title: >
+      Are discrete units necessary for Spoken Language Modeling?
+    where: 
+    link: https://arxiv.org/abs/2203.05936
+    authors: >
+      <b>Tu Anh Nguyen</b>, Benoit Sagot, Emmanuel Dupoux
+    img: /assets/img/papers/discreteunits.png
+    abstract: >
+      Recent work in spoken language modeling shows the possibility of learning a language unsupervisedly from 
+      raw audio without any text labels. The approach relies first on transforming the audio into a sequence of 
+      discrete units (or pseudo-text) and then training a language model directly on such pseudo-text. Is such a 
+      discrete bottleneck necessary, potentially introducing irreversible errors in the encoding of the speech 
+      signal, or could we learn a language model without discrete units at all? In this work, show that 
+      discretization is indeed essential for good results in spoken language modeling, but that can omit the 
+      discrete bottleneck if we use using discrete target features from a higher level than the input features.
+      We also show that an end-to-end model trained with discrete target like HuBERT achieves similar results as 
+      the best language model trained on pseudo-text on a set of zero-shot spoken language modeling metrics from 
+      the Zero Resource Speech Challenge 2021. 
+    blog: 
+    code: 
+    demo: 
+  - title: >
+      textless-lib: a Library for Textless Spoken Language Processing
+    where: 
+    link: https://arxiv.org/abs/2202.07359
+    authors: >
+      Eugene Kharitonov, Jade Copet, Kushal Lakhotia, <b>Tu Anh Nguyen</b>, Paden Tomasello, Ann Lee, 
+      Ali Elkahky, Wei-Ning Hsu, Abdelrahman Mohamed, Emmanuel Dupoux, Yossi Adi
+    img: /assets/img/papers/textlesslib.PNG
+    abstract: >
+      Textless spoken language processing research aims to extend the applicability of standard NLP toolset 
+      onto spoken language and languages with few or no textual resources. In this paper, we introduce 
+      textless-lib, a PyTorch-based library aimed to facilitate research in this research area. We describe 
+      the building blocks that the library provides and demonstrate its usability by discuss three different 
+      use-case examples: (i) speaker probing, (ii) speech resynthesis and compression, and (iii) speech 
+      continuation. We believe that textless-lib substantially simplifies research the textless setting 
+      and will be handful not only for speech researchers but also for the NLP community at large.
+    blog: https://ai.facebook.com/blog/generating-chit-chat-including-laughs-yawns-ums-and-other-nonverbal-cues-from-raw-audio/
+    code: https://github.com/facebookresearch/textlesslib
+    demo: 
 2021:
   - title: >
-      Text-Free Prosody-Aware Generative Spoken Language Modeling
+      Textless speech emotion conversion using decomposed and discrete representations
     where: 
+    link: https://arxiv.org/abs/2111.07402
+    authors: >
+      Felix Kreuk, Adam Polyak, Jade Copet, Eugene Kharitonov, <b>Tu Anh Nguyen</b>, Morgane Revière,
+      Wei-Ning Hsu, Abdelrahman Mohamed, Emmanuel Dupoux, Yossi Adi
+    img: /assets/img/papers/emotion.PNG
+    abstract: >
+      Speech emotion conversion is the task of modifying the perceived emotion of a speech utterance while 
+      preserving the lexical content and speaker identity. In this study, we cast the problem of emotion 
+      conversion as a spoken language translation task. We use a decomposition of the speech signal into 
+      discrete learned representations, consisting of phonetic-content units, prosodic features, speaker, 
+      and emotion. First, we modify the speech content by translating the phonetic-content units to a 
+      target emotion, and then predict the prosodic features based on these units. Finally, the speech 
+      waveform is generated by feeding the predicted representations into a neural vocoder. Such a paradigm 
+      allows us to go beyond spectral and parametric changes of the signal, and model non-verbal vocalizations, 
+      such as laughter insertion, yawning removal, etc. We demonstrate objectively and subjectively that the 
+      proposed method is vastly superior to current approaches and even beats text-based systems in terms of 
+      perceived emotion and audio quality. We rigorously evaluate all components of such a complex system and 
+      conclude with an extensive model analysis and ablation study to better emphasize the architectural choices, 
+      strengths and weaknesses of the proposed method.
+    blog: https://ai.facebook.com/blog/generating-chit-chat-including-laughs-yawns-ums-and-other-nonverbal-cues-from-raw-audio/
+    code: 
+    demo: https://speechbot.github.io/emotion/
+  - title: >
+      Text-Free Prosody-Aware Generative Spoken Language Modeling
+    where: In Proc. of ACL 2022
     link: https://arxiv.org/abs/2109.03264
     authors: >
-      Eugene Kharitonov, Ann Lee, Adam Polyak, Yossi Adi, Jade Copet, Kushal Lakhotia, 
+      Eugene Kharitonov*, Ann Lee*, Adam Polyak, Yossi Adi, Jade Copet, Kushal Lakhotia, 
       <b>Tu Anh Nguyen</b>, Morgane Rivière, Abdelrahman Mohamed, Emmanuel Dupoux, Wei-Ning Hsu
     img: /assets/img/papers/p-gslm.PNG
     abstract: >
@@ -32,7 +115,7 @@
       the pGSLM can utilize prosody to improve both prosody and content modeling, and also generate natural, 
       meaningful, and coherent speech given a spoken prompt.
     blog: https://ai.facebook.com/blog/textless-nlp-generating-expressive-speech-from-raw-audio/
-    code: 
+    code: https://github.com/pytorch/fairseq/tree/main/examples/textless_nlp/pgslm
     demo: https://speechbot.github.io/pgslm/
   - title: >
       Generative Spoken Language Modeling from Raw Audio
@@ -58,8 +141,8 @@
   - title: >
       The Zero Resource Speech Challenge 2021: Spoken language modelling
     where: >
-      In IEEE Transactions on Pattern Analysis and Machine Intelligence
-    link: https://arxiv.org/abs/2104.14700
+      In Proc. Interspeech 2021
+    link: https://www.isca-speech.org/archive/pdfs/interspeech_2021/dunbar21_interspeech.pdf
     authors: >
       Ewan Dunbar, Mathieu Bernard, Nicolas Hamilakis, <b>Tu Anh Nguyen</b>, Maureen de Seyssel, 
       Patricia Rozé, Morgane Rivière, Eugene Kharitonov, Emmanuel Dupoux
@@ -79,10 +162,10 @@
   - title: >
       The Zero Resource Speech Benchmark 2021: Metrics and baselines for unsupervised spoken language modeling
     where: >
-      In NeurIPS SAS 2020 Workshop
+      In NeurIPS 2020 Workshop on Self-Supervised Learning for Speech and Audio Processing
     link: https://arxiv.org/abs/2011.11588
     authors: >
-      <b>Tu Anh Nguyen</b>, Maureen de Seyssel, Patricia Rozé, Morgane Rivière, 
+      <b>Tu Anh Nguyen*</b>, Maureen de Seyssel*, Patricia Rozé, Morgane Rivière, 
       Evgeny Kharitonov, Alexei Baevski, Ewan Dunbar, Emmanuel Dupoux
     img: /assets/img/papers/zs2021-metrics.png
     abstract: >

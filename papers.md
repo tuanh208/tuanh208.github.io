@@ -30,3 +30,6 @@ permalink: /papers/
 {% endfor %}
 {% endfor %}
 
+<br>
+\* Equal contribution as first authors.
+
